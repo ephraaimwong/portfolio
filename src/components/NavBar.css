@@ -1,0 +1,20 @@
+.topNav{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+.topNav ul{
+    padding: 0%;
+}
+.topNav li{
+    display: inline;
+    padding: 5%;
+
+}
+.topNav img{
+    height: 6rem;
+    width: 6rem;
+}

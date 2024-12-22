@@ -1,0 +1,29 @@
+.HeadShot-container{
+    padding: 15%;
+    padding-top: 5%;
+    background: green;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    
+}
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.about-me{
+    padding-left: 7%;
+/* make this box max height same as headshot, overflow scroll on y */
+}
+.HS-h1{
+    font-size: 2rem;
+}
+
+.socials{
+
+}
+.HS-ul{
+    display: inline-flex;
+    list-style: none;
+    gap: 10%;
+    max-width: 100%;
+}
