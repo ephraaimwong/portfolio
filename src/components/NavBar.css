@@ -1,20 +1,94 @@
-.topNav{
+.navbar{
     background-color: aqua;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     top: 0;
     left: 0;
 }
-.topNav ul{
+
+.nav-logo{
+    font: Montserrat;
+    font-size: 3rem;
+}
+
+.navbar-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.navbar-links ul{
     padding: 0%;
 }
-.topNav li{
+.navbar-links li{
     display: inline;
     padding: 5%;
 
 }
-.topNav img{
+.navbar-links img{
     height: 6rem;
     width: 6rem;
+}
+
+.adhoc-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.floating-icon{
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+    background-color: azure;
+    border: none;
+    border-radius: 50%;
+    height: 8vh;
+    width: 4vw;
+    visibility: hidden;
+    transition: transform 0.5s ease, opacity 0.8s ease, visibility 0.8s ease;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.floating-icon.visible{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-100%); /*Move up into view*/
+    animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(100%);
+    }
+    50% {
+      transform: translateY(-150%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+.floating-icon button{
+    background: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.floating-icon:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* hamburger menu icon sizing */
+.smallNavIcon{
+    width: 60%;
+    height: 60%;
+    
 }
