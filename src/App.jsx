@@ -5,6 +5,7 @@ import './App.css'
 import NavBar from './components/NavBar'
 import HeadShot from './components/HeadShot'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
