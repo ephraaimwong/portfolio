@@ -25,3 +25,25 @@ Boilerplate cleanup:
 React (Single Page Application) Structure:
 
 1. index.html is the SPA / landing page
+
+## Deploying Vite React App to Github Pages
+
+1. `npm install gh-pages --save-dev` -- Install gh-pages as dev dependency
+2. Add the 2 scripts in `package.json` file
+   ```
+   "scripts": {  
+       // ...
+       "predeploy": "npm run build",
+       "deploy": "gh-pages -d dist"
+   }
+   ```
+3. Add base path (repo name) in `vite.config.js`
+   ```
+   // https://vitejs.dev/config/
+   export default defineConfig({
+   plugins: [react()],
+   base: "/repoName",    <-------add base path here
+   });
+   ```
+4. Configure Github Pages deploy from `gh-pages /root`
+5. `npm run deploy` -- Deploy Vite React App build, since we are using gh-pages, we **DO NOT** need to re-run this command
