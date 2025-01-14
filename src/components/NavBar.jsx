@@ -2,7 +2,7 @@ import React, {useState, useEffect, useRef} from 'react'
 import logo from '../assets/react.svg'
 import './NavBar.css'
 import menuIcon from '../assets/hamburger-menu-icon.png'
-import { debounce } from 'chart.js/helpers'
+// import { debounce } from 'chart.js/helpers'
 
 const NavBar = () => {
 
