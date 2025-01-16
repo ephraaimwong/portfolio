@@ -1,12 +1,21 @@
 .navbar{
-    background-color: aqua;
+    background-color: white;
     top: 0;
     left: 0;
+    /*styling for boxshadow to properly apply*/
+    position: relative; 
+    box-shadow: 0 8px 6px -2px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
 }
 
+/* ensures that logo is aligned center in navbar  */
 .nav-logo{
-    font: Montserrat;
-    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+.nav-logo img{
+    height: auto;
+    width: 8rem;
 }
 
 .navbar-links{
@@ -14,6 +23,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    /* padding-left: 5%; */
 }
 .navbar-links ul{
     padding: 0%;
@@ -23,10 +33,7 @@
     padding: 5%;
 
 }
-.navbar-links img{
-    height: 6rem;
-    width: 6rem;
-}
+
 
 .adhoc-navbar{
     position: fixed;

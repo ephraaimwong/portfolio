@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css'; // Import the CSS file
+import logo from '../assets/Logo.jpg'
 
 const Navbar = ({ isAdhocNavbar}) => {
   // If it's an adhoc navbar and not visible, return null
@@ -10,7 +11,7 @@ const Navbar = ({ isAdhocNavbar}) => {
   return (
     <nav className={`navbar ${isAdhocNavbar ? 'adhoc-navbar' : ''}`}>
       <div className="navbar-links">
-        <a className="nav-logo">Ephraim J. Wong | 王恩荣</a>
+        <a className="nav-logo"> <img src={logo}/> {/*Ephraim J. Wong | 王恩荣*/}</a>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/">About</a></li>
